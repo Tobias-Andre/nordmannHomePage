@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-size: 10px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 #welcome-page {
@@ -16,7 +17,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5.5rem;
-    background-color: #ffffff00;
+    background-color: #ffffff66;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 2;
 }
 
 #welcome-image {
@@ -26,7 +30,7 @@
     height: 100vh;
     top: 0;
     left: 0;
-    filter: blur(4px);
+    filter: blur(20px);
     opacity: 50%;
     z-index: 0;
 }
@@ -38,6 +42,7 @@
     z-index: 1;
     top: 40%;
     left: 20%;
+    transform: rotate(21deg);
 }
 
 #star2 {
@@ -47,6 +52,7 @@
     z-index: 1;
     top: 80%;
     left: 80%;
+    transform: rotate(13deg);
 }
 
 #star3 {
@@ -56,6 +62,7 @@
     z-index: 1;
     top: 40%;
     left: 90%;
+    transform: rotate(-23deg);
 }
 
 #star4 {
@@ -65,6 +72,7 @@
     z-index: 1;
     top: 20%;
     left: 75%;
+    transform: rotate(-21deg);
 }
 
 #star5 {
@@ -74,6 +82,7 @@
     z-index: 1;
     top: 10%;
     left: 10%;
+    transform: rotate(32deg);
 }
 
 #star6 {
@@ -83,6 +92,7 @@
     z-index: 1;
     top: 70%;
     left: 10%;
+    transform: rotate(-53deg);
 }
 
 #star7 {
@@ -92,6 +102,7 @@
     z-index: 1;
     top: 5%;
     left: 30%;
+    transform: rotate(37deg);
 }
 
 #star8 {
@@ -101,6 +112,7 @@
     z-index: 1;
     top: 85%;
     left: 50%;
+    transform: rotate(-37deg);
 }
 
 #star9 {
@@ -110,6 +122,7 @@
     z-index: 1;
     top: 20%;
     left: 90%;
+    transform: rotate(58deg);
 }
 
 #star10 {
@@ -119,6 +132,7 @@
     z-index: 1;
     top: 10%;
     left: 80%;
+    transform: rotate(-31deg);
 }
 
 #star11 {
@@ -128,6 +142,7 @@
     z-index: 1;
     top: 50%;
     left: 5%;
+    transform: rotate(96deg);
 }
 
 #star12 {
@@ -137,6 +152,7 @@
     z-index: 1;
     top: 10%;
     left: 5%;
+    transform: rotate(-93deg);
 }
 
 #star13 {
@@ -146,6 +162,7 @@
     z-index: 1;
     top: 60%;
     left: 80%;
+    transform: rotate(39deg);
 }
 
 #star14 {
@@ -155,6 +172,7 @@
     z-index: 1;
     top: 20%;
     left: 20%;
+    transform: rotate(-76deg);
 }
 
 #star15 {
@@ -162,15 +180,40 @@
     width: 110px;
     height: 110px;
     z-index: 1;
-    top: 5%;
-    left: 30%;
+    top: 70%;
+    left: 65%;
+    transform: rotate(76deg);
 }
 
 #star16 {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     z-index: 1;
-    top: 85%;
-    left: 50%;
+    top: 60%;
+    left: 20%;
+    transform: rotate(47deg);
+}
+
+.star {
+    filter: blur(2px);
+}
+
+#contact-info {
+    background: rgb(0,42,255);
+    background: radial-gradient(circle, rgba(0,42,255,1) 0%, rgba(255,0,0,1) 100%); 
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0 1rem 0;
+}
+
+#github-link {
+    color: #000000;
+}
+
+#github-link, #phone-number, #mail {
+    font-size: 6rem;
+    background-color: #ffffff66;
+    padding: 10px;
+    border-radius: 10px;
 }
