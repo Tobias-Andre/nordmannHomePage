@@ -8,7 +8,7 @@
 #welcome-page {
     width: 100vw;
     height: 100vh;
-    background-color: #599aab;
+    background-color: #608af8;
 }
 
 #title {
@@ -35,6 +35,12 @@
     z-index: 0;
 }
 
+.divider {
+    width: 100vw;
+    height: 1rem;
+    background-color: #4d67fc;
+}
+
 #star1 {
     position: absolute;
     width: 100px;
@@ -42,7 +48,6 @@
     z-index: 1;
     top: 40%;
     left: 20%;
-    transform: rotate(21deg);
 }
 
 #star2 {
@@ -52,7 +57,6 @@
     z-index: 1;
     top: 80%;
     left: 80%;
-    transform: rotate(13deg);
 }
 
 #star3 {
@@ -62,7 +66,6 @@
     z-index: 1;
     top: 40%;
     left: 90%;
-    transform: rotate(-23deg);
 }
 
 #star4 {
@@ -72,7 +75,6 @@
     z-index: 1;
     top: 20%;
     left: 75%;
-    transform: rotate(-21deg);
 }
 
 #star5 {
@@ -82,7 +84,6 @@
     z-index: 1;
     top: 10%;
     left: 10%;
-    transform: rotate(32deg);
 }
 
 #star6 {
@@ -92,7 +93,6 @@
     z-index: 1;
     top: 70%;
     left: 10%;
-    transform: rotate(-53deg);
 }
 
 #star7 {
@@ -102,7 +102,6 @@
     z-index: 1;
     top: 5%;
     left: 30%;
-    transform: rotate(37deg);
 }
 
 #star8 {
@@ -112,7 +111,6 @@
     z-index: 1;
     top: 85%;
     left: 50%;
-    transform: rotate(-37deg);
 }
 
 #star9 {
@@ -122,7 +120,6 @@
     z-index: 1;
     top: 20%;
     left: 90%;
-    transform: rotate(58deg);
 }
 
 #star10 {
@@ -132,7 +129,6 @@
     z-index: 1;
     top: 10%;
     left: 80%;
-    transform: rotate(-31deg);
 }
 
 #star11 {
@@ -142,7 +138,6 @@
     z-index: 1;
     top: 50%;
     left: 5%;
-    transform: rotate(96deg);
 }
 
 #star12 {
@@ -152,7 +147,6 @@
     z-index: 1;
     top: 10%;
     left: 5%;
-    transform: rotate(-93deg);
 }
 
 #star13 {
@@ -162,7 +156,6 @@
     z-index: 1;
     top: 60%;
     left: 80%;
-    transform: rotate(39deg);
 }
 
 #star14 {
@@ -172,7 +165,6 @@
     z-index: 1;
     top: 20%;
     left: 20%;
-    transform: rotate(-76deg);
 }
 
 #star15 {
@@ -182,7 +174,6 @@
     z-index: 1;
     top: 70%;
     left: 65%;
-    transform: rotate(76deg);
 }
 
 #star16 {
@@ -192,16 +183,46 @@
     z-index: 1;
     top: 60%;
     left: 20%;
-    transform: rotate(47deg);
 }
 
 .star {
     filter: blur(2px);
 }
 
+.spin {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.spin-2 {
+    animation-name: spin-2;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin-2 {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    }
+}
+
 #contact-info {
-    background: rgb(0,42,255);
-    background: radial-gradient(circle, rgba(0,42,255,1) 0%, rgba(255,0,0,1) 100%); 
+    background: radial-gradient(circle, #94ecee, #6594f7); 
     display: flex;
     justify-content: space-evenly;
     padding: 1rem 0 1rem 0;
@@ -216,4 +237,34 @@
     background-color: #ffffff66;
     padding: 10px;
     border-radius: 10px;
+}
+
+#our-companies {
+    display: grid;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    align-items: center;
+    justify-items: center;
+    row-gap: 4rem;
+    background: radial-gradient(circle, #94ecee, #7dc1f2, #608af8);
+    padding: 5%; 
+}
+
+#our-companies p {
+    font-size: 2rem;
+    background-color: #ffffff66;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#our-companies h3 {
+    grid-column: 1 / span 5;
+    font-size: 4rem;
+}
+
+div {
+    z-index: 3;
+}
+
+#parent-company {
+    display: flex;
 }
