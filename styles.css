@@ -249,9 +249,20 @@
     padding: 5%; 
 }
 
-#our-companies p {
-    font-size: 1vw;
+#our-companies a {
     background-color: #ffffff66;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1vw;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#our-companies a:hover {
+    background-color: #00000066;
+    color: #6390ff;
+    text-decoration: none;
+    font-size: 1vw;
     padding: 5px;
     border-radius: 5px;
 }

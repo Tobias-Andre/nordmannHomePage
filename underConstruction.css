@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+.center {
+    text-align: center;
+    padding: 2rem;
+}
+
+.divider {
+    width: 100vw;
+    height: 2rem;
+    background-color: #006411;
+}
+
+#main {
+    background: radial-gradient(circle, #16b900 0%, #16b900 60%, #084100 100%);
+}
+
+#main h1{
+    font-size: 4rem;
+}
+
+#our-companies {
+    display: grid;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    align-items: center;
+    justify-items: center;
+    row-gap: 3rem;
+    padding: 2rem;
+    background: radial-gradient(circle, #33be20 0%, #218f13 60%, #052900 100%);
+    height: 100vh;
+}
+
+#our-companies h3 {
+    font-size: 3rem;
+    grid-column: 1 /span 5;
+    background-color: #ffffff66;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+#our-companies a {
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #ffffff66;
+    color: #000000;
+}
+
+#our-companies a:hover {
+    background-color: #00000066;
+    color: #ff0000;
+}

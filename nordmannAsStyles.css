@@ -51,7 +51,24 @@ img.absolute {
 }
 
 #our-companies h3 {
-    font-size: 3rem;
+    font-size: 4rem;
     grid-column: 1 /span 5;
     background-color: #25327c;
+    padding: 2rem;
+    border-radius: 2rem;
+    color: #ffffff;
+}
+
+#our-companies a {
+    font-size: 2rem;
+    background-color: #3852e9;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+#our-companies a:hover {
+    background-color: #0400ff66;
+    color: #ff7878;
 }
